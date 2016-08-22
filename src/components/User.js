@@ -15,12 +15,12 @@ export default class User extends Component {
     }
 
     return (
-      <div>
+      <div class="ib user">
         {content}
         {
           error
           ?
-            <p>
+            <p class="error">
               {error}
               <br />
               Oops!, try again plz

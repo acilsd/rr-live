@@ -9,7 +9,7 @@ export function handleLogin() {
     });
     VK.Auth.login((r) => { //eslint-disable-line no-undef
       if(r.session) {
-        let username = r.session.use.first_name;
+        let username = r.session.user.first_name;
 
         dispatch({
           type: LOGIN_SUCCESS,
